@@ -1,0 +1,13 @@
+#	端口号	
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testTransactional?serverTimezone=GMT%2B8&useSSL=true
+    username: root
+    password: root
+
+#	mapper xml 文件地址
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
